@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form log in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" id="signup" class="form">
+            <div class="header">
+                <h2>Create Account</h2>
+                <p>Get started with your free account</p>
+
+            </div>
+            <div class="social">
+                <div class="login-twitter">
+                    <i class="fa-brands fa-twitter" style="color:white; font-size: 25px;"></i>
+                    <p>Log in with Twitter</p>
+                </div>
+                <div class="login-facebook">
+                    <i class="fa-brands fa-facebook" style="color:white; font-size: 25px;"></i>
+                    <p>Log in with facebook</p>
+
+                </div>
+
+            </div>
+            <div class="or">
+                <p class="divider-text">
+                    <span class="bg-light"> OR </span>
+                </p>
+
+            </div>
+
+            <div class="form-field" id="form-username">
+                <div class="left">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="right">
+                    <input type="text" class="username" id="username" placeholder="username">
+
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-exclamation" id="failure-username" style="color: red"></i>
+                    <i class="fa-solid fa-check" id="success-username" style="color: green"></i>
+                </div>
+            </div>
+            <div id="msg-username"></div>
+            <div class="form-field" id="form-email">
+                <div class="left">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="right">
+                    <input type="text" class="email" id="email" placeholder="abc@gmail.com">
+                    
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-exclamation" id="failure-email" style="color: red" ></i>
+                    <i class="fa-solid fa-check" id="success-email" style="color: green" ></i>
+                </div>
+            </div>
+            <div id="msg-email"></div>
+            <div class="form-field" id="form-password">
+                <div class="left">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="right">
+                    <input type="password" class="password" id="password" placeholder="password">
+
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-exclamation" id="failure-password" style="color: red" ></i>
+                    <i class="fa-solid fa-check" id="success-password" style="color:green"></i>
+                </div>
+            </div>
+            <div id="msg-password"></div>
+            <div class="form-field" id="form-confirm-password">
+                <div class="left">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="right">
+                    <input type="password" class="confirm-password" id="confirm-password" placeholder="repeat password">
+
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-exclamation" id="failure-confirm-password" style="color: red"></i>
+                    <i class="fa-solid fa-check" id="success-confirm-password" style="color: green"></i>
+                </div>
+            </div>
+            <div id="msg-confirm-password"></div>
+            <div class="btn">
+                <button type="submit" value="sign up">Create Account</button>
+            </div>
+            <div class="footer">
+                <p>Have you Account?<a href="#">Sign in</a>
+                </p>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="/js/jquery.js"></script>
+<script src="/js/form-login.js"></script>
+
+
+</html>
